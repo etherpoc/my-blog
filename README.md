@@ -1,2 +1,2 @@
-# my-blog
-技術ブログって憧れあるよね？
+# My-Blog
+Next.js × Actix Web

@@ -1,0 +1,19 @@
+.title {
+    margin-left: 60px;
+    height: 140px;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent_posts {
+    width: 1550px;
+    h2 {
+        color: #383838;
+        font-size: 40px;
+        font-weight: 300;
+    }
+}

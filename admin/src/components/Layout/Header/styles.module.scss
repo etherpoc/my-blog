@@ -1,0 +1,21 @@
+.header_container {
+  position: fixed;
+  width: 100vh;
+  height: 68px;
+  bottom: -68px;
+  left: 0;
+  transform-origin: top left;
+  transform: rotateZ(-90deg);
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+  h1 {
+    color: #FFFFFF;
+    letter-spacing: 25px;
+    font-size: 40px;
+    font-weight: 350;
+  }
+}

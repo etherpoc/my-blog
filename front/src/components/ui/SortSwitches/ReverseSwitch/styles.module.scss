@@ -1,0 +1,53 @@
+.reverse_switch_container {
+  width: 160px;
+  height: 30px;
+  margin-left: 10px;
+
+  .reverse_state{
+    display: none;
+  }
+
+  .switch_items {
+    height: 29px;
+    display: grid;
+    place-items: center;
+    display: flex;
+    .switch{
+      width: 50px;
+      height: 25px;
+      border-radius: 16px;
+      background-color: #AAAAAA;
+      transition-duration: 0.7s;
+      transition-timing-function: ease; 
+  
+      .circle {
+        margin-left: 0%;
+        width: 25px;
+        height: 25px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        transition-duration: 0.7s;
+        transition-timing-function: ease; 
+      }
+    }
+  }
+
+  .reverse_state:checked + .switch_items {
+    .switch{
+      background-color: #FF9F9F;
+  
+      .circle {
+        margin-left: 50%;
+      }
+    }
+  }
+  
+  .asc {
+    color: #383833;
+    margin-right: 10px;
+  }
+  .desc {
+    color: #383833;
+    margin-left: 10px;
+  }
+}
