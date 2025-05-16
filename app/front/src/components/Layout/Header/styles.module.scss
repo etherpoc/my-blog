@@ -1,0 +1,44 @@
+.header_container {
+  position: fixed;
+  width: 100vw;
+  height: 68px;
+  left: 0;
+  transform-origin: top left;
+  background-color: #222222;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+  h1 {
+    width: 100%;
+    color: #FFFFFF;
+    letter-spacing: 25px;
+    font-size: 40px;
+    font-weight: 350;
+    text-align: center;
+  }
+}
+
+.nav_container {
+  height: 100px;
+  width: 100vw;
+  background-color: #222222;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .navlink {
+    display: block;
+    font-size: 40px;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+.spacer {
+  height: 100px;
+}

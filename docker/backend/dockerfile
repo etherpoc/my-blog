@@ -1,0 +1,22 @@
+# ベースイメージ
+FROM rust:1.77
+
+# コンテナ内の作業ディレクトリを設定
+WORKDIR /app
+
+# アプリケーションのソースをコンテナにコピー
+COPY api/ .
+
+# envファイル作成
+RUN touch .env
+RUN echo "DOMAIN='localhost'" > .env
+RUN echo "PORT=8000" > .env
+
+# 依存パッケージをインストール
+RUN cargo build --release
+
+# ポート番号を公開
+EXPOSE 8000
+
+# アプリケーション起動
+CMD ./target/release/api

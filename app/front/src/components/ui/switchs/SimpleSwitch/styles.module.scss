@@ -1,0 +1,27 @@
+.switch_button_container{
+  display: flex;
+  color: #222222;
+
+  .swiches {
+    display: flex;
+    height: 30px;
+    background-color: #FFFFFF;
+  }
+
+  .button {
+    display: flex;
+    height: 30px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selected_button {
+    display: flex;
+    height: 30px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+  }
+}

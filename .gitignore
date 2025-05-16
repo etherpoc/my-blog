@@ -1,0 +1,9 @@
+# environments
+.env
+.env.*
+!.env*.sample
+
+./db
+
+# macOS用の設定
+**/._**

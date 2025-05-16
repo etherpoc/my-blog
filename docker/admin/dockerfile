@@ -1,0 +1,20 @@
+# ベースイメージ
+FROM node:latest
+
+# コンテナ内の作業ディレクトリを設定
+WORKDIR /app
+
+# アプリケーションのソースをコンテナにコピー
+COPY admin/ .
+
+# 依存パッケージをインストール
+RUN npm install
+
+# アプリケーションビルド
+RUN npm run build
+
+# ポート番号を公開
+EXPOSE 4000
+
+# アプリケーション起動
+CMD ["npm", "start"]

@@ -1,0 +1,58 @@
+version: "3.8"
+
+x-environment: &environment
+  DB_PORT: ${DB_PORT}
+
+services:
+  front:
+    container_name: front
+    build: 
+      context: .
+      dockerfile: docker/front/Dockerfile
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    depends_on:
+      - backend
+    restart: always
+
+  admin:
+    container_name: admin
+    build: 
+      context: .
+      dockerfile: docker/admin/Dockerfile
+    ports:
+      - 4000:4000
+    env_file:
+      - .env
+    depends_on:
+      - backend
+    restart: always
+
+  backend:
+    container_name: backend
+    build: 
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    container_name: postgresql
+    image: postgres:16
+    ports:
+      - ${DB_PORT}:5432
+    env_file:
+      - .env
+    restart: always
+
+networks:
+  app_network:
+    driver: bridge
+

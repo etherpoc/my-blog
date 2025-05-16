@@ -1,0 +1,59 @@
+.posts {
+    margin-top: 20px;
+    hr {
+        border: none;
+        border-top: 3px double #222222;
+    }
+    .table_head {
+        display: flex;
+        color: #000000;
+        padding-left: 10px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        input {
+            height: 100%;
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .id {
+            width: 60px;
+            border-right: solid #DDDDDD 1px;
+        }
+        .title {
+            width: 500px;
+            border-right: solid #DDDDDD 1px;
+            input {
+                border: solid #AAAAAA 1px;
+                border-radius: 3px;
+            }
+        }
+        .tags {
+            width: 500px;
+            border-right: solid #DDDDDD 1px;
+            input {
+                border: solid #AAAAAA 1px;
+                border-radius: 3px;
+            }
+
+        }
+        .pv {
+            width: 60px;
+            border-right: solid #DDDDDD 1px;
+            text-align: center;
+        }
+        .visibility {
+            width: 80px;
+            border-right: solid #DDDDDD 1px;
+            text-align: center;
+        }
+        .save {
+            width: 80px;
+            border-right: solid #DDDDDD 1px;
+        }
+        .detail {
+            width: 80px;
+        }
+    }
+}

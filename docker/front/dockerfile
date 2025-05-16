@@ -1,0 +1,25 @@
+# ベースイメージ
+FROM node:latest
+
+# コンテナ内の作業ディレクトリを設定
+WORKDIR /app
+
+# アプリケーションのソースをコンテナにコピー
+COPY front/ .
+
+# envファイル作成
+RUN touch .env
+RUN echo "NEXT_PUBLIC_API_BASE_URL='http://api:8000'" > .env
+RUN echo "NEXT_PUBLIC_BASE_URL='http://localhost:3000'" > .env
+
+# 依存パッケージをインストール
+RUN npm install
+
+# アプリケーションビルド
+RUN npm run build
+
+# ポート番号を公開
+EXPOSE 3000
+
+# アプリケーション起動
+CMD ["npm", "start"]

@@ -1,0 +1,28 @@
+.switch_container{
+  display: flex;
+  color: #222222;
+
+  .choices {
+    display: flex;
+    height: 30px;
+    background-color: #FFFFFF;
+  }
+
+  .choice {
+    display: flex;
+    height: 30px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selected_choice {
+    display: flex;
+    height: 30px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #FF8787;
+  }
+}

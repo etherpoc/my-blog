@@ -1,0 +1,89 @@
+.menu_button_container {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  height: 57px;
+  width: 57px;
+  z-index: 105;
+
+  .menu_flag {
+    display: none;
+  }
+
+  .button {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    span {
+      position: absolute;
+      background: #FFFFFF;
+    }
+
+    .line1 {
+      top: 14px;
+      left: 7.5px;
+      height: 4px;
+      width: 42px;
+      transition-duration: 1s;
+      transition-timing-function: ease;
+    }
+  .line2 {
+      top: 28px;
+      left: 7.5px;
+      height: 4px;
+      width: 34px;
+      transition-duration: 1s;
+      transition-timing-function: ease; 
+    }
+    .line3 {
+      top: 42px;
+      left: 7.5px;
+      height: 4px;
+      width: 29px;
+      transition-duration: 1s;
+      transition-timing-function: ease;
+    }
+  }
+  .button:hover {
+    .line1 {
+      border-radius: 4px;
+      width: 35px;
+      transform: translate(9px, -3px) rotate(30deg);
+      transform-origin: left center;
+    }
+    .line2 {
+      border-radius: 4px;
+      width: 35px;
+      transform: translate(-8px, 0px) rotate(90deg);
+      transform-origin: center;
+    }
+    .line3 {
+      border-radius: 4px;
+      width: 35px;
+      transform: translate(9px, 3px) rotate(-30deg);
+      transform-origin: left center;
+    }
+  }
+  .menu_flag:checked + .button {
+    .line1 {
+      opacity: 0;
+    }
+    .line2 {
+      width: 42px;
+      border-radius: 4px;
+      transform: rotate(45deg);
+      transform-origin: center;
+    }
+    .line3 {
+      top: 28px;
+      width: 42px;
+      border-radius: 4px;
+      transform: rotate(-45deg);
+      transform-origin: center;
+    }
+  }
+
+}
