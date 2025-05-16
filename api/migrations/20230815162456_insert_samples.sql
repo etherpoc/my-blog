@@ -1,0 +1,12 @@
+-- Add migration script here
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title1', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test1", "sample"}', '# test1', 2);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title2', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test2", "sample"}', '# test2', 3);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title3', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test3", "sample"}', '# test3', 1);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title4', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test4", "sample"}', '# test4', 0);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title5', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test5", "sample"}', '# test5', 2);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title6', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test1", "sample"}', '# test6', 5);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title7', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test1", "sample"}', '# test7', 100);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title8', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test1", "sample"}', '# test8', 0);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title9', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test2", "sample"}', '# test9', 2);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title10', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test2", "sample"}', '# test10', 3);
+INSERT INTO articles ("title", "img_url", "tags", "content", "pv") VALUES ('Title11', 'http://drive.google.com/uc?export=view&id=14KE4M7xVz_494gEttrIK6uFsSfvPbAeu', '{"test2", "sample"}', '# test11', 4);

@@ -1,0 +1,24 @@
+.title {
+    position: absolute;
+    z-index: 200;
+    margin-left: 120px;
+    font-size: 95px;
+    font-weight: 400;
+    color: #FF8787;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_posts {
+    width: 1550px;
+    margin-top: 140px;
+    h2 {
+        color: #383838;
+        font-size: 40px;
+        font-weight: 300;
+    }
+}

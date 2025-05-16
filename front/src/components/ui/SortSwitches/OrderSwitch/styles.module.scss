@@ -1,0 +1,61 @@
+.order_switch_container{
+    display: flex;
+    color: #222222;
+    .swicth_label {
+        display: grid;
+        place-items: center;
+        color: #383833;
+        font-size:large;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .swiches {
+        position: relative;
+        display: flex;
+        height: 29px;
+        width: 700px;
+        background-color: #FFFFFF;
+    }
+
+    .order_value {
+        display: flex;
+        height: 100%;
+        width: 33.3%;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .selected_order_value {
+        display: flex;
+        height: 100%;
+        width: 33.3%;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        color: #FFFFFF;
+    }
+
+    .select_block {
+        position: absolute;
+        height: 100%;
+        width: 33.3%;
+        background-color: #FF9F9F;
+        z-index: 1;
+    }
+
+    .left {
+        top: 0%;
+        left: 0%;
+    }
+    .right {
+        top: 0%;
+        right: 0%;
+    }
+    .center{
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
